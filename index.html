@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garden</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Garden</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <script src="index.js"></script>
+
+  <h1>My Garden 🌱</h1>
+
+  <div class="plant-options">
+    <button id="button" class="plant-btn" data-plant="🌻">🌻 Sunflower</button>
+    <button class="plant-btn" data-plant="🌷">🌷 Flower</button>
+    <button class="plant-btn" data-plant="🌳">🌳 Tree</button>
+  </div>
+
+  <div id="plantCursor"></div>
+
+  <div id="garden" class="garden"></div>
+
+  <script src="index.js"></script>
 </body>
 </html>
