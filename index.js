@@ -1,6 +1,8 @@
 const garden = document.getElementById("garden");
 const plantCursor = document.getElementById("plantCursor");
 const buttons = document.querySelectorAll(".plant-btn")
+const shovelButton = document.getElementById("shovelButton")
+const plantCursorImage = document.getElementById("plantCursorImage");
 console.log("All buttons",buttons)
 const total_cell = 20;
 
@@ -45,6 +47,9 @@ document.addEventListener("mousemove", (event) => {
 buttons.forEach((button) => {
 
   button.addEventListener("click", () => {
+    if (button.id === "shovelButton") {
+      return;
+    }
   
   selectedPlant = button.dataset.plant;
 
@@ -52,5 +57,16 @@ buttons.forEach((button) => {
 
   plantCursor.style.display = "block";
 });
+
+})
+
+
+shovelButton.addEventListener("click" ,(e) => {
+ console.log("Shovel clicked",e)
+  selectedPlant = shovelButton.dataset.tool;
+
+  plantCursorImage.src = selectedPlant;
+
+  plantCursor.style.display = "block"
 
 })
