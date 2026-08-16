@@ -8,18 +8,32 @@ body {
   margin-bottom: 20px;
 }
 
-.plant-btn {
+/* .plant-btn {
   padding: 10px 16px;
   margin: 5px;
   cursor: pointer;
   font-size: 18px;
-}
+} */
 
-.plant-btn img {
+ /* .plant-btn img {
   height: 50px;
   width: 50px;
   background-color: transparent;
   border: none;
+} */
+
+#img{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border:none;
+} 
+
+#plantCursorImage{
+   height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border:none;
 }
 
 .garden {
